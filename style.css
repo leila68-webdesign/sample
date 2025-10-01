@@ -172,7 +172,7 @@ body {
 .navbar a {
     float: left;
     display: block;
-    color: #f2f2f2;
+    color: #fdfdfd;
     text-align: center;
     padding: 15px;
     text-decoration: none;
@@ -180,8 +180,9 @@ body {
 }
 
 .navbar a:hover {
-    background-color: #ddd;
+    background-color: #f9f9f9;
     color: black;
+    border-radius: 0px 0px 0px 15px;
 }
 
 .main {
@@ -189,6 +190,99 @@ body {
     margin-top: 50px;
     /* Increased to prevent content from hiding under navbar */
     min-height: calc(100vh - 50px);
+}
+.video {
+  width: 100%;
+  height: 500px;
+}
+/* Video styles */
+.video-container {
+    display: block;
+    width: 100%;
+    padding: 500px;
+    background-color: #8e8b8b;
+    float: block;
+    /* flex: 1; */
+    /* min-width: 280px; */
+    /* max-width: 100%; */
+    text-align: center;
+    border: 5px solid rgb(127, 124, 124);
+    padding: clamp(1rem, 3vw, 3rem);
+    margin: 0;
+    background-color: white;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+    /* margin: 2rem auto; */
+    /* padding: 0 1rem; */
+
+
+.video-box {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    padding: 1.5rem;
+    border: 2px solid #e0e0e0;
+}
+.video-box2{
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    padding: 1.5rem;
+    border: 2px solid #e0e0e0;
+}
+.video-box3{
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    padding: 1.5rem;
+    border: 2px solid #e0e0e0;
+}
+.video-title {
+    color: #050505;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.video-box video {
+    width: 100%;
+    border-radius: 8px;
+    background: #000;
+    margin-bottom: 1rem;
+}
+
+/* Video controls customization */
+.video-box video::-webkit-media-controls {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+}
+
+/* Responsive video container */
+@media screen and (max-width: 768px) {
+    .video-container {
+        margin: 1rem auto;
+    }
+    
+    .video-box {
+        padding: 1rem;
+    }
+    
+    .video-title {
+        font-size: 1.25rem;
+    }
+}
+.mainbox {
+    padding: clamp(1rem, 3vw, 2rem);
+    background-color: rgb(208, 208, 208);
+    width: 100%;
+    margin: 1rem auto;
+    text-align: center;
+    border-radius: 2px;
+    box-shadow: 0 2px 4px rgba(21, 21, 21, 0.1);
 }
 
 /* Ensure the body doesn't cause horizontal scroll */
