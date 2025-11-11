@@ -93,6 +93,8 @@ body>div:not(.w3-content):not(.mainbox) {
     background-color: white;
     border-radius: 8px;
     transition: transform 0.3s ease;
+    box-shadow: 5px 5px 5px;
+
 }
 
 .box {
@@ -263,6 +265,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    text-shadow: 2px 2px 4px #161616;
     color: white;
 }
 
